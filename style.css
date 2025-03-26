@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-sec {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header {
+    background-color: rgb(253, 184, 19);
+    align-items: center;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.list li {
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+
+}
+
+.list li:hover {
+    border-bottom: 2px solid black;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.hero .logo {
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.hero-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.hero-right {
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.openBtn {
+    width: 20px;
+    border: none;
+    background: none;
+}
+
+.dropdown .btn {
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 0.7em;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.scroll-gap {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 1220px) {
+    .list {
+        display: flex;
+        list-style: none;
+        padding-top: 5px;
+        height: 40px;
+        justify-content: center;
+        margin-bottom: 0%;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: rgb(68, 72, 76);
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .list li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .list {
+        display: flex;
+        list-style: none;
+        padding-top: 3px;
+        height: 35px;
+        justify-content: center;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: rgb(68, 72, 76);
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+
+    .list li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:915px) {
+    /* Add media query rules here if needed */
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn img {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    width: 50px;
+    cursor: pointer;
+    color: white;
+    font-family: serif;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: rgb(253, 184, 19);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+.carousel-indicators {
+    display: flex;
+    margin-left: 70%;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+}
+
+.carousel .carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(253, 184, 19);
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.carousel .carousel-caption {
+    position: absolute;
+    text-align: left;
+    left: 5%;
+    top: 5%;
+}
+
+.carousel .carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel .carousel-caption p {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.carousel .carousel-caption button {
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.carousel .carousel-caption .btn {
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.carousel .carousel-caption button a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.carousel .carousel-caption .btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.c-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.card {
+    height: 300px;
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgb(68, 72, 76);
+}
+
+.card h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 10px;
+    color: rgb(74, 72, 72);
+}
+
+.card .btn {
+    background-color: rgb(253, 184, 19);
+    color: black;
+    border: none;
+    width: 90%;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card .btn:hover {
+    background-color: whitesmoke;
+}
+
+.card2 {
+    border-radius: 10px;
+    border: 5px solid rgb(253, 184, 19);
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgb(68, 72, 76)
+}
+
+.card2 li {
+    display: flex;
+    height: 95px;
+    background-color: rgb(253, 184, 19);
+    margin-bottom: 3px;
+}
+
+.card2 .img {
+    position: relative;
+    right: 50px;
+}
+
+.card2-tag {
+    margin-left: 40px;
+}
+
+.card2 .img-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+}
+
+.card2 li img {
+    width: 30px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+
+}
+
+.card2 li a {
+    text-decoration: none;
+    color: rgb(74, 72, 72);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.card2 .a-font {
+    text-decoration: none;
+    color: rgb(74, 72, 72);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 25px;
+}
+
+@media screen and (max-width:970px) {
+    .card {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgb(68, 72, 76);
+    }
+
+    .card h5 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-top: 8px;
+        color: rgb(74, 72, 72);
+    }
+
+    .card .btn {
+        background-color: rgb(253, 184, 19);
+        color: black;
+        border: none;
+        width: 90%;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+
+    .card2 {
+        border-radius: 10px;
+        border: 5px solid rgb(253, 184, 19);
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgb(68, 72, 76)
+    }
+
+    .card2 li {
+        display: flex;
+        height: 80px;
+        background-color: rgb(253, 184, 19);
+        margin-bottom: 2px;
+    }
+
+    .card2 .img {
+        position: relative;
+        right: 25px;
+    }
+
+    .card2-tag {
+        margin-left: 35px;
+    }
+
+    .card2 .img-circle {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+    }
+
+    .card2 li img {
+        width: 20px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+
+    .card2 li a {
+        text-decoration: none;
+        color: rgb(74, 72, 72);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    .card2 .a-font {
+        text-decoration: none;
+        color: rgb(74, 72, 72);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        position: absolute;
+        margin-top: 15px;
+    }
+
+}
+@media screen and (max-width:850px) {
+    .card {
+        height: 200px;
+        width: 200px;;
+        box-shadow: 0 4px 8px 0 rgb(68, 72, 76);
+    }
+    .card h5{
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 5px;
+        color: rgb(74, 72, 72);
+    }
+    .card .btn{
+        background-color: rgb(253, 184, 19);
+        color: black;
+        border: none;
+        width: 90%;
+        font-weight: 150;
+        font-size: 0.6rem;
+        padding-bottom: 3px;
+    }
+    .card-text{
+        font-size: 0.6rem;
+    }
+    .card2{
+        border-radius: 10px;
+        border: 5px solid rgb(253, 184, 19);
+        width: 200px;
+        box-shadow: 0 4px 8px 0 rgb(68, 72, 76);
+    }
+    .card2 li{
+        display: flex;
+        height: 61px;
+        background-color: rgb(253, 184, 19);
+        margin-bottom:2px;
+    }
+    .card2 .img{
+        position: relative;
+        right: 20px;
+    }
+    .card2-tag{
+        margin-left: 30px;
+    }
+    .card2 .img-circle{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+    }
+    .card2 li img{
+        width: 20px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .card2 li a{
+        text-decoration: none;
+        color: rgb(74, 72, 72);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        position: absolute;
+    }
+    .card2 .a-font{
+        text-decoration: none;
+        color: rgb(74, 72, 72);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        position: absolute;
+        margin-top: 15px;
+    }
+}
+
+.footer h1 {
+    color: white;
+    justify-self: center;
+    padding-top: 20px;
+}
+
+.footer h1 span {
+    color: rgb(253, 184, 19);
+}
+
+.footer h4 {
+    color: white;
+    justify-self: center;
+}
+
+.download-app {
+    display: flex;
+    justify-self: center;
+    padding: 50px;
+    gap: 2rem;
+}
+
+.download-app button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-weight: bold;
+}
+
+.download-app img {
+    width: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    border-bottom: 5px solid rgb(253, 184, 19);
+    margin-bottom: 10px;
+    width: 90%;
+
+}
+
+.left-content img {
+    width: 150px;
+}
+
+.left-content {
+    justify-content: space-between;
+}
+
+.socials img {
+    width: 40px;
+}
+
+.left-content h3 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.right-content {
+    display: flex;
+
+}
+
+.right-content ul a {
+    text-decoration: none;
+}
+
+.right-content a li:hover {
+    color: rgb(253, 184, 19);
+}
+
+.right-content ul li {
+    color: white;
+    list-style: none;
+    text-align: right;
+}
+
+.right-content h5 {
+    color: #bbb;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.base {
+    width: 90%;
+    justify-content: space-between;
+    justify-self: center;
+    font-size: small;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.base-left span {
+    color: white;
+    padding-right: 50px;
+
+}
+
+.base-right a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.base-right .last {
+    text-decoration: none;
+    color: rgb(253, 184, 19);
+}
+
+@media screen and (max-width:1040px) {
+    .base-left span {
+        color: white;
+        padding-right: 30px;
+    }
+
+    .base-right a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .base-right.last {
+        text-decoration: none;
+        color: rgb(253, 184, 19);
+    }
+}
+
+@media screen and (max-width:928px) {
+    .base {
+        width: 90%;
+        justify-content: space-between;
+        justify-self: center;
+        font-size: 0.55rem;
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .left-content img {
+        width: 100px;
+    }
+
+    .left-content h3 {
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    .socials img {
+        width: 30px;
+    }
+
+    .right-content ul li {
+        color: white;
+        list-style: none;
+        text-align: right;
+        font-size: 0.7rem;
+    }
+
+    .right-content h5 {
+        color: #bbb;
+        font-size: 0.8rem;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .base {
+        width: 90%;
+        justify-content: space-between;
+        justify-self: center;
+        font-size: 0.5rem;
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+
+    .left-content img {
+        width: 80px;
+    }
+
+    .left-content h3 {
+        color: white;
+        font-size: 0.5rem;
+    }
+
+    .socials img {
+        width: 20px;
+    }
+
+    .base-left span {
+        color: white;
+        padding-right: 30px;
+    }
+
+    .base-right a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .footer h1 {
+        color: white;
+        justify-self: center;
+        padding-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    .footer h4 {
+        color: white;
+        justify-self: center;
+        font-size: 1rem;
+    }
+
+    .download-app {
+        display: flex;
+        justify-self: center;
+        padding: 30px;
+        gap: 1rem;
+    }
+
+    .download-app button {
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(31, 31, 31);
+        font-weight: bold;
+    }
+
+    .download-app img {
+        width: 30px;
+    }
+
+    .right-content ul li {
+        color: white;
+        list-style: none;
+        text-align: right;
+        font-size: 0.6rem;
+    }
+
+    .right-content h5 {
+        color: #bbb;
+        font-size: 0.7rem;
+        text-align: right;
+    }
+
+    .base-left span {
+        color: white;
+        padding-right: 20px;
+    }
+
+    .base-right a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .footer h1 {
+        color: white;
+        justify-self: center;
+        padding-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .footer h4 {
+        color: white;
+        justify-self: center;
+        font-size: 0.8rem;
+    }
+
+    .left-content img {
+        width: 60px;
+    }
+
+    .left-content h3 {
+        color: white;
+        font-size: 0.4rem;
+    }
+
+    .socials img {
+        width: 15px;
+    }
+
+    .right-content ul li {
+        color: white;
+        list-style: none;
+        text-align: right;
+        font-size: 0.4rem;
+    }
+
+    .right-content h5 {
+        color: #bbb;
+        font-size: 0.5rem;
+        text-align: right;
+    }
+
+    .base {
+        width: 90%;
+        justify-content: space-between;
+        justify-self: center;
+        font-size: 0.3rem;
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+
+    .base-left span {
+        color: white;
+        padding-right: 15px;
+    }
+
+    .base-right a {
+        padding-right: 5px;
+        text-decoration: none;
+        color: white;
+    }
+}

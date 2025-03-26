@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-sec {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header {
+    background-color: rgb(253, 184, 19);
+    align-items: center;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.list li {
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+
+}
+
+.list li:hover {
+    border-bottom: 2px solid black;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.hero .logo {
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.hero ul{
+    display: flex;
+    list-style: none;
+    padding-top: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 2.5rem;
+    justify-self: center;
+}
+
+.hero ul li a{
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+}
+
+.hero-right {
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.openBtn {
+    width: 20px;
+    border: none;
+    background: none;
+}
+
+.dropdown .btn {
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 0.7em;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-top: 25px;
+
+}
+.dropdown .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color:#f1f1f1;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top:  25px;
+    margin-left:  20px;
+    z-index: 1;
+}
+
+.scroll-gap {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn img {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    width: 50px;
+    cursor: pointer;
+    color: white;
+    font-family: serif;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: rgb(253, 184, 19);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+.carousel-item img{
+    width: 100%;
+    height:  80vh;
+    position: relative;
+}
+
+.carousel-caption{
+    position: absolute;
+    background-color: rgba(19, 16, 16, 0.632);
+    width: 500px;
+    justify-self:center;
+    backdrop-filter: blur(5px);
+}
+.carousel-caption p{
+    font-size:  3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-caption span{
+    font-size:  1.5rem;
+    color: white;
+    font-weight: bold;
+
+}
+.carousel-indicators{
+    justify-content: center;
+    position: absolute;
+}
+
+.about{
+    background-color: whitesmoke;
+
+}
+.about h1{
+    font-size:  3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.about h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(168,176,181);
+}
+
+.about .grid{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.left-grid li{
+    list-style: none;
+    border-bottom: 3px solid rgb(253, 184, 19);
+    padding-bottom: 10px;
+    margin-top:  50px;
+}
+.left-grid h3{
+    font-size:  2.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(46,67,78);
+}
+
+.left-grid p{
+    font-size:  1.1rem;
+    font-weight: 500;
+    text-align: left;
+    color:rgb(137,149,155);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.right-grid{
+    width: 350px;
+    justify-self: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    box-shadow:  0 4px 8px 0 rgb(46,67,78);
+}
+
+.right-grid img{
+    width: 300px;
+    height: 70%;
+    margin-left: 25px;
+    justify-self: center;
+    padding-top: 15px;
+}
+
+.right-grid .btn button{
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    margin-top: 75px;
+    margin-left: 10px;
+}
+
+.right-grid .btn .btn2{
+    background-color: rgb(253, 184, 19);
+    color: black;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.meet-room{
+    background-color: whitesmoke;
+}
+
+.room{
+    width: 95%;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+
+}
+.room img{
+    width:100%;
+    height: 80vh;
+}
+
+.room p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(46,67,78);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgb(46,67,78)
+}
+
+.vid{
+    position: relative;
+}
+.vid video{
+    position: absolute;
+}
+
+.vid-text{
+    position: absolute;
+    background-color: rgba(19, 16, 16, 0.632);
+    backdrop-filter: blur(5px);
+    width: 500px;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+.vid-text h1{
+    font-size:  3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vid-text p{
+    font-size:  1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.vid-text button{
+    background-color: rgb(253, 184, 19);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.vid-text button a{
+    text-decoration: none;
+    color: black;
+    font-size:  1rem;
+    font-weight: 500;
+}
+.card-sec{
+    position: relative;
+}
