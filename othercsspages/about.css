@@ -10,6 +10,10 @@
     z-index: 100;
 }
 
+.head-sec2 {
+    display: none;
+}
+
 .header {
     background-color: rgb(253, 184, 19);
     align-items: center;
@@ -57,7 +61,7 @@
     margin-top: 10px;
 }
 
-.hero ul{
+.hero ul {
     display: flex;
     list-style: none;
     padding-top: 30px;
@@ -67,7 +71,7 @@
     justify-self: center;
 }
 
-.hero ul li a{
+.hero ul li a {
     text-decoration: none;
     color: rgb(68, 72, 76);
 }
@@ -98,22 +102,70 @@
     margin-top: 25px;
 
 }
-.dropdown .dropdown-menu{
+
+.dropdown .dropdown-menu {
     display: none;
     position: absolute;
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     width: 200px;
     border-radius: 5px;
     padding: 10px 0;
-    margin-top:  25px;
-    margin-left:  20px;
+    margin-top: 25px;
+    margin-left: 20px;
     z-index: 1;
 }
+
+
 
 .scroll-gap {
     width: 100%;
     height: 150px;
     position: relative;
+}
+
+@media screen and (max-width: 1220px) {
+    .list {
+        display: flex;
+        list-style: none;
+        padding-top: 5px;
+        height: 40px;
+        justify-content: center;
+        margin-bottom: 0%;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: rgb(68, 72, 76);
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .list li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .list {
+        display: flex;
+        list-style: none;
+        padding-top: 3px;
+        height: 35px;
+        justify-content: center;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: rgb(68, 72, 76);
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+
+    .list li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .overlay {
@@ -174,92 +226,221 @@
     background: #bbb;
 }
 
-.carousel-item img{
+@media screen and (max-width:920px) {
+    .head-sec2 {
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .head-sec {
+        display: none;
+    }
+
+    .header2 {
+        width: 100%;
+        background-color: rgb(46, 67, 78);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .header2 span {
+        background-color: rgb(46, 67, 78);
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 500;
+        width: 33%;
+        height: 30px;
+        text-align: center;
+        border-right: 1px solid white;
+        margin-top: 5px;
+    }
+
+    .navbar-brand img {
+        width: 200px;
+    }
+
+    .offcanvas-header {
+        display: block;
+    }
+
+    .offcanvas-header2 {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .offcanvas-header2 img {
+        width: 200px;
+        margin-left: 20px;
+
+    }
+
+    .head-link button {
+        width: 90%;
+        height: 40px;
+        border: 2px solid rgb(253, 184, 19);
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .head-link a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .offcanvas-body li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(68, 72, 76);
+    }
+
+    .offcanvas-body a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .offcanvas-body li span:hover {
+        color: rgb(253, 184, 19);
+    }
+
+    .offcanvas-body .logo-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(255, 251, 240);
+        position: relative;
+    }
+
+    .offcanvas-body .logo-circle img {
+        width: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .offcanvas-body a span {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .offcanvas-body .dropdown-menu {
+        border: none;
+    }
+
+    .offcanvas-body .dropdown-menu li {
+        border: none;
+        list-style-type: disc;
+    }
+
+    .offcanvas-body .dropdown-menu li a {
+        font-size: 0.8rem;
+        padding-left: 5px;
+    }
+}
+
+.carousel-item img {
     width: 100%;
-    height:  80vh;
+    height: 80vh;
     position: relative;
 }
 
-.carousel-caption{
+
+.carousel-caption {
     position: absolute;
     background-color: rgba(19, 16, 16, 0.632);
     width: 500px;
-    justify-self:center;
+    justify-self: center;
     backdrop-filter: blur(5px);
 }
-.carousel-caption p{
-    font-size:  3rem;
+
+.carousel-caption p {
+    font-size: 3rem;
     color: white;
     font-weight: bold;
 }
 
-.carousel-caption span{
-    font-size:  1.5rem;
+.carousel-caption span {
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
 
 }
-.carousel-indicators{
+
+.carousel-indicators {
     justify-content: center;
     position: absolute;
 }
 
-.about{
+.about {
     background-color: whitesmoke;
 
 }
-.about h1{
-    font-size:  3rem;
+
+.about h1 {
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     padding-top: 75px;
 }
 
-.about h3{
+.about h3 {
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
-    color:rgb(168,176,181);
+    color: rgb(168, 176, 181);
 }
 
-.about .grid{
+.about .grid {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.left-grid li{
+.left-grid li {
     list-style: none;
     border-bottom: 3px solid rgb(253, 184, 19);
     padding-bottom: 10px;
-    margin-top:  50px;
-}
-.left-grid h3{
-    font-size:  2.5rem;
-    font-weight: bold;
-    text-align: left;
-    color: rgb(46,67,78);
+    margin-top: 50px;
 }
 
-.left-grid p{
-    font-size:  1.1rem;
+.left-grid h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(46, 67, 78);
+}
+
+.left-grid p {
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: left;
-    color:rgb(137,149,155);
+    color: rgb(137, 149, 155);
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.right-grid{
+
+.right-grid {
     width: 350px;
     justify-self: center;
     background-color: white;
     margin-top: 100px;
     margin-left: 20px;
-    box-shadow:  0 4px 8px 0 rgb(46,67,78);
+    box-shadow: 0 4px 8px 0 rgb(46, 67, 78);
 }
 
-.right-grid img{
+.right-grid img {
     width: 300px;
     height: 70%;
     margin-left: 25px;
@@ -267,7 +448,7 @@
     padding-top: 15px;
 }
 
-.right-grid .btn button{
+.right-grid .btn button {
     background-color: rgb(253, 184, 19);
     color: black;
     font-size: 0.7rem;
@@ -281,7 +462,21 @@
     margin-left: 10px;
 }
 
-.right-grid .btn .btn2{
+.right-grid .btn button a {
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.right-grid .btn .btn2 a {
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.right-grid .btn .btn2 {
     background-color: rgb(253, 184, 19);
     color: black;
     font-size: 0.7rem;
@@ -295,80 +490,285 @@
     margin-left: 10px;
 }
 
-.meet-room{
+.meet-room {
     background-color: whitesmoke;
 }
 
-.room{
+.room {
     width: 95%;
     padding-top: 50px;
     padding-left: 100px;
     padding-bottom: 25px;
 
 }
-.room img{
-    width:100%;
+
+.room img {
+    width: 100%;
     height: 80vh;
 }
 
-.room p{
+.room p {
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(46,67,78);
+    color: rgb(46, 67, 78);
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     background-color: white;
-    box-shadow: 0 2px 4px 0 rgb(46,67,78)
+    box-shadow: 0 2px 4px 0 rgb(46, 67, 78)
 }
-
-.vid{
+.video{
     position: relative;
 }
-.vid video{
+.vid{
     position: absolute;
 }
-
 .vid-text{
     position: absolute;
+    margin-top: 200px;
+    margin-left: 350px;
+    text-align: center;
     background-color: rgba(19, 16, 16, 0.632);
-    backdrop-filter: blur(5px);
-    width: 500px;
-    margin-top: 300px;
-    margin-left: 400px;
+    padding: 25px;
 }
-.vid-text h1{
-    font-size:  3rem;
+.vid-text h3{
+    font-size: 3rem;
     color: white;
     font-weight: bold;
-    text-align: center;
 }
-
-.vid-text p{
-    font-size:  1.5rem;
-    font-weight: 500;
-    text-align: center;
+.vid-text h5{
+    font-size: 1.5rem;
     color: white;
-}
-
-.vid-text button{
+    font-weight: bold;
+}.video .btn button{
     background-color: rgb(253, 184, 19);
-    border-radius: 5px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
     padding: 10px;
     cursor: pointer;
-    width: 300px;
+    width: 400px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.video .btn button a{
+    text-decoration: none;
+    color: rgb(68, 72, 76);
+}
+.next-steps{
+    background-color: rgb(253, 184, 19);
+    position: relative;
+    margin-top:700px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.next-steps .next-steps-head{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 50px;
+    color: rgb(68, 72, 76);
+    margin-left: 30px;
+}
+.next-steps .grid{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.next-steps .grid .grid-list{
+    height: 300px;
+    width: 350px;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    box-shadow: rgb(46, 67, 78) 0px 4px 8px 0px;
+}
+.next-steps .grid .grid-list h3{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(46, 67, 78);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.next-steps .grid .grid-list ul{
+    list-style: none;
+    margin-left: 5px;
+}
+.next-steps .grid .grid-list ul li{
+    padding-bottom: 5px;
+}
+.next-steps .grid .grid-list ul li a{
+    text-decoration: none;
+    color: rgb(46, 67, 78);
+    font-size: 1.1rem;
+}
+.next-steps .grid .grid-list ul li a:hover{
+    color: rgb(253, 184, 19);
+}
+.next-steps .grid .grid-list ul li a span{
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding-right: 5px;
+    color: rgb(253, 184, 19);
+}
+.next-steps .grid .grid-right{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    box-shadow: rgb(46, 67, 78) 0px 4px 8px 0px;
+}
+.next-steps .grid .grid-right .img{
+    width: 350px;
+    height: 300px;
+}
+.next-steps .grid .grid-right img{
+    width: 350px;
+    height: 300px;
+}
+.next-steps .grid .grid-right h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(74, 98, 112);
+    margin-left: 30px;
+    margin-top:  100px;
+}
+.next-steps .grid .grid-right button{
+    background-color: rgb(253, 184, 19);
+    color: rgb(74, 98, 112);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 150px;
     height: 50px;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 30px;
+}
+.next-steps .grid .grid-right button a{
+    text-decoration: none;
+    color: rgb(74, 98, 112);
+}
+.next-steps .grid .grid-right button:hover{
+    background-color: rgb(202, 207, 210);
+    color: rgb(68, 72, 76);
+}
+.footer h1 {
+    color: white;
+    justify-self: center;
+    padding-top: 20px;
 }
 
-.vid-text button a{
-    text-decoration: none;
-    color: black;
-    font-size:  1rem;
-    font-weight: 500;
+.footer h1 span {
+    color: rgb(253, 184, 19);
 }
-.card-sec{
-    position: relative;
+
+.footer h4 {
+    color: white;
+    justify-self: center;
+}
+
+.download-app {
+    display: flex;
+    justify-self: center;
+    padding: 50px;
+    gap: 2rem;
+}
+
+.download-app button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-weight: bold;
+}
+
+.download-app img {
+    width: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    border-bottom: 5px solid rgb(253, 184, 19);
+    margin-bottom: 10px;
+    width: 90%;
+
+}
+
+.left-content img {
+    width: 150px;
+}
+
+.left-content {
+    justify-content: space-between;
+}
+
+.socials img {
+    width: 40px;
+}
+
+.left-content h3 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.right-content {
+    display: flex;
+
+}
+
+.right-content ul a {
+    text-decoration: none;
+}
+
+.right-content a li:hover {
+    color: rgb(253, 184, 19);
+}
+
+.right-content ul li {
+    color: white;
+    list-style: none;
+    text-align: right;
+}
+
+.right-content h5 {
+    color: #bbb;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.base {
+    width: 90%;
+    justify-content: space-between;
+    justify-self: center;
+    font-size: small;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.base-left span {
+    color: white;
+    padding-right: 50px;
+
+}
+
+.base-right a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.base-right .last {
+    text-decoration: none;
+    color: rgb(253, 184, 19);
 }
